@@ -1,4 +1,4 @@
-function Email() {
+function Email({ email, emailHandler }) {
   return (
     <div className="contact-email">
       <span className="email-label">E:</span>
@@ -6,6 +6,8 @@ function Email() {
         type="text"
         className="contact-email-input"
         placeholder="Email address"
+        onChange={emailHandler}
+        value={email}
       />
     </div>
   );

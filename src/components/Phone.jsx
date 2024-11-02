@@ -1,4 +1,4 @@
-function Phone() {
+function Phone({ phone, phoneHandler }) {
   return (
     <div className="contact-phone">
       <span className="phone-label">P:</span>
@@ -6,6 +6,8 @@ function Phone() {
         type="text"
         className="contact-phone-input"
         placeholder="Phone Number"
+        onChange={phoneHandler}
+        value={phone}
       />
     </div>
   );
