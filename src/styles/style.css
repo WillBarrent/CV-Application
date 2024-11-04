@@ -243,8 +243,49 @@ body {
 }
 
 .experience-button--add button:hover,
-.experience-button--remove button:hover:not(:disabled) {
+.experience-button--remove button:hover:not(:disabled),
+.responsibility-button--add button:hover {
   background-color: rgba(140, 132, 119, 0.8);
+}
+
+.responsibilities {
+  margin-left: 20px;
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.responsibility {
+  width: 100%;
+}
+
+.responsibility input {
+  width: 100%;
+  padding: 5px 0;
+
+  border: none;
+  border-bottom: 1px solid rgba(140, 132, 119, 0.5);
+  outline: none;
+
+  color: #301a06;
+}
+
+.responsibility-button--add {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.responsibility-button--add button {
+  outline: none;
+  border: none;
+  padding: 5px;
+
+  background-color: #8c8477;
+  color: #fff;
+
+  cursor: pointer;
 }
 
 button:disabled {
